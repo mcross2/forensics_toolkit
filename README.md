@@ -1,10 +1,4 @@
 # Forensics Toolkit
-Name
-Description
-Your personal review
-Your personal notes on usage
-Source URL (if applicable)
-Local Source (if applicable)
 
 ## Disc Image Analysis
 #### FTK Imager
@@ -17,6 +11,24 @@ Notes: No extra notes needed.
 
 [Download](https://accessdata.com/product-download/ftk-imager-version-4.2.0)
 
+#### Netcat
+Description: Netcat is used to remote into a machine. We used it to clone a machine and it's memory from another machine.
+[More info](https://www.win.tue.nl/~aeb/linux/hh/netcat_tutorial.pdf)
+
+Review: It was pretty easy and straight forward to use.
+
+Notes: Here is a tutorial on cloning a machine using netcat [tutorial](http://www.softpanorama.org/Tools/DD/dd_and_netcat.shtml)
+
+[Download](https://eternallybored.org/misc/netcat/)
+
+#### DD
+Description: We used this is parallel with Netcat to clone disc image.
+[More info](http://www.softpanorama.org/Tools/DD/dd_and_netcat.shtml)
+
+Review: It was pretty easy and straight forward to use.
+
+Notes: No notes needed
+
 #### FTK
 Description: FTK is intended to be a complete computer forensics solution. It gives investigators an aggregation of the most common forensic tools in one place. It allows you to traverse through a disc image and look at a logs stored on the computer and logs built by FTK based off the disc image. 
 [More info](https://resources.infosecinstitute.com/category/computerforensics/introduction/commercial-computer-forensics-tools/ftk-forensic-toolkit-overview/#gref)
@@ -26,6 +38,14 @@ Review: I prefer Autsopsy, it is a little easier to use in my opinion than FTK
 Notes: I personally didn't use this. I prefer Autopsy.
 
 [Download](https://accessdata.com/product-download/ftk-download-page)
+
+#### tcpdump
+Description: Used for capturing the memory of a machine.
+[More info](https://www.tcpdump.org/manpages/tcpdump.1.html)
+
+Review: Easy and straight forward to use.
+
+Notes: Make sure to do this before turning off the machine.
 
 #### Autopsy
 Description:  Autopsy is very similar to FTK in that it is most commonly used to view disc image files and create reports on a disc image that can help digital forensic investigators. 
@@ -69,38 +89,43 @@ Notes: Works much better on linux. Don't do it on windows.
 [Download](https://github.com/bro/bro)
 
 #### Snort
-Description:  [More info]()
+Description: Snort is similar to Bro in that it analyzes network capture and looks for suspicious traffic. It flags any suspicious packets and creates a report that can be used to track the packets and see the full exchange.
+[More info](https://www.techopedia.com/definition/4114/snort)
 
-Review:
+Review: I didn't use snort a ton in this class. It's not hard to use/find tutorials online.
 
-Notes: 
+Notes: No notes saved. Used online tutorial the one-time I used it.
 
-[Download]()
+[Download](https://www.snort.org/downloads)
 
 
 #### Wireshark
-Description:  [More info]()
+Description: Wireshark is an interface that allows investigators to look at all packets sent across the network within the time frame of the network capture.
+[More info](https://www.wireshark.org/)
 
-Review:
+Review: I have had to use this a few times in different classes. It is a great tool and pretty intuitive to use.
 
-Notes: 
+Notes: No stored notes. Pretty straight forward app.
 
-[Download]()
+[Download](https://www.wireshark.org/#download)
+
 
 ## Memory Analysis
 #### Rekall
-Description:  [More info]()
+Description: Rekall is a platform used mainly for memory analysis.
+[More info](http://www.rekall-forensic.com/)
 
-Review:
+Review: I didn't used rekall at all so I don't have any personal preferences at all
 
-Notes: 
+Notes: I didn't use it so I don't have any notes.
 
-[Download]()
+[Download](https://github.com/google/rekall)
 
 #### Volatility
-Description:  [More info]()
+Description: Volatility is a tool used for memory analysis. I reads a .mem file and generates reports that helps investigators notice and track suspicious programs and functions running on the machine.
+[More info](https://www.investopedia.com/terms/v/volatility.asp)
 
-Review:
+Review: Volatility is kind of a pain becuase for the labs we used it for, we couldn't find an appropiate profile to use for it to successfully read through the .mem file.
 
 Notes: 
 
